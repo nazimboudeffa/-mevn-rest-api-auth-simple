@@ -1,0 +1,26 @@
+{
+  "name": "mevn-rest-api-auth-simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazimboudeffa/mevn-rest-api-auth-simple.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nazimboudeffa/mevn-rest-api-auth-simple/issues"
+  },
+  "homepage": "https://github.com/nazimboudeffa/mevn-rest-api-auth-simple#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
