@@ -1,3 +1,3 @@
-# MEVN Restful API for Authentification
+# NEM Restful API for Authentification
 
 MY COOKBOOK https://github.com/nazimboudeffa/mevn-cookbook
