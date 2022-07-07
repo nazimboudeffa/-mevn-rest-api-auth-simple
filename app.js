@@ -3,6 +3,7 @@ const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const  cors = require("cors");
+const bodyParser = require('body-parser');
 // Import Routes
 const authRoute = require('./routes/auth');
 const postsRoute = require('./routes/posts');
@@ -19,6 +20,7 @@ app.use(express.json());
 
 // Route Middleware
 app.use(cors());
+app.use(bodyParser.json());
 app.use('/api/user', authRoute);
 app.use('/api/posts', postsRoute);
 
