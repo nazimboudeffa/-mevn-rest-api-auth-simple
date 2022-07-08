@@ -11,16 +11,16 @@ const postsRoute = require('./routes/posts');
 dotenv.config();
 
 // Connect to DB
-mongoose.connect('mongodb+srv://nazimboudeffa:'+process.env.PASS+'@cluster0.fruqwgc.mongodb.net/?retryWrites=true&w=majority', () => {
+mongoose.connect('mongodb+srv://nazimboudeffa:'+process.env.PASS+'@cluster0.fruqwgc.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true }, () => {
     console.log('Connected to DB!');
 });
 
 // Middleware
 app.use(express.json());
-
-// Route Middleware
 app.use(cors());
 app.use(bodyParser.json());
+
+// Route Middleware
 app.use('/api/user', authRoute);
 app.use('/api/posts', postsRoute);
 
